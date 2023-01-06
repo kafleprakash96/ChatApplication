@@ -1,25 +1,32 @@
 package com.chatapp;
 
+//import necessary java packages
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+//Create class
 public class Client {
 
+	//Declare variables
 	Socket socket;
-
 	BufferedReader br;
 	PrintWriter pw;
 
+	//Create constructor
 	public Client() {
 
 		try {
 
 			System.out.println("Sending request to server");
+
+			//create socket connection
 			socket = new Socket("127.0.0.1", 7777);
+
 			System.out.println("Connection done");
 
+			
 			br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			pw = new PrintWriter(socket.getOutputStream());
 

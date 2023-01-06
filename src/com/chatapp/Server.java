@@ -1,21 +1,24 @@
 package com.chatapp;
 
+//import necessary packages
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+//Create server class
 public class Server {
 
+	//Declare variables
 	ServerSocket server;
 	Socket socket;
 
-	// Create variable for input stream and output stream
-
+	//Declare variable for input stream and output stream
 	BufferedReader br;
 	PrintWriter pw;
 
+	//Create Constructor
 	public Server() {
 		try {
 			server = new ServerSocket(7777);
