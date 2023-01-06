@@ -26,5 +26,10 @@ This will start the threads for both classes. Start writing the message and hit 
 If you write bye as a message, it will end the conversation
 
 
-![Demo Imgae](demo.jpg)
+The following demo image is using Visual Studio Code.
+
+You can download Visual Studio Code from [here](https://code.visualstudio.com/download).
+
+
+![Demo Image](demo.jpg)
 
